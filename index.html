@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/043bb91fd0.js" crossorigin="anonymous"></script>
     <link href="styles.css" type="text/css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+    <div id="heading">File-Sharing App</div>
     <div class="outer-container">
         <div class="dropzone">
             <div id="imgs">
@@ -23,7 +25,38 @@
                 </span>
             </span>
         </div>
+        <div class="progress-container">
+            <div class="progress-fluid">
+            </div>
+            <div class="inner-container">
+                <div class="uploading">Uploading...</div>
+                <div class="upload-percent">0%</div>
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="show-share">
+            <div class="show-time">
+                The link will Expire in 24 hrs.
+            </div>
+            <div class="show-link">
+                <input type="text" readonly value="http://localhost:3000/files/5fd07644-d539-4cce-a0da-cbe70429c2d5">
+                <i class="fa-solid fa-copy" id="copy"></i>
+            </div>
+            <div class="send-email">Or Send Via Email</div>
+            <form id="email-form">
+                <div class="sender">
+                    <label for="sender-input">Sender's Email:</label>
+                    <input id="sender-input" value="daksh13579@gmail.com" readonly><br>
+                </div>
+                <div class="reciever">
+                    <label for="reciever-input">Reciever's Email:</label>
+                    <input id="reciever-input">
+                </div>  
+            </form>
+            <button id="send-btn">Send</button>
+        </div>
     </div>
+    <!-- <div id="footer">Made with love by Daksh <i class="fa-solid fa-heart"></i></div> -->
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-body,.outer-container,.dropzone,#imgs{
+body,.dropzone,#imgs{
     background-color:rgba(204, 204, 243, 0.579);
     margin:0px;
     padding:0px;
@@ -7,27 +7,36 @@ body,.outer-container,.dropzone,#imgs{
     align-items: center;
     justify-content: center;
 }
+#heading{
+    position: absolute;
+    top:0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:30px;
+    color:rgb(244, 165, 165);
+}
 .outer-container{
-    height:auto;
     width:400px;
     background-color:white;
     border-radius: 10px;
-    margin-top: -300px;
+    /* margin-top: -0px; */
+    position: relative;
 }
 .dropzone{
     position: relative;
     border-radius: 10px;
     margin:10px;
-    height:200px;
-    width:90%;
+    height:300px;
+    /* 200-300 */
+    width:93%;
     background-color: aliceblue;
     border:3px dashed rgb(203, 224, 242);
 }
 .dropzone img{
     position: absolute;
-    height:70px;
+    height:90px;
+    /* 70-90 */
     transition-property:transform;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
     transition-timing-function: ease-in;
 }
 .center{
@@ -40,13 +49,13 @@ body,.outer-container,.dropzone,#imgs{
     transform:rotate(10deg) translateX(20px) scale(0.9);
     transform-origin:bottom ;
     z-index: 0;
-    filter:grayscale(50%);
+    /* filter:grayscale(50%); */
 }
 .shift2{
     transform:rotate(-10deg) translateX(-20px) scale(0.9);
     transform-origin:bottom ;
     z-index: 0;
-    filter:grayscale(50%);
+    /* filter:grayscale(50%); */
 }
 #imgs{
     position: relative;
@@ -64,4 +73,114 @@ body,.outer-container,.dropzone,#imgs{
     color:rgb(88, 165, 232);
     cursor: pointer;
 }
+.progress-container{
+    position: relative;
+    height:60px;
+    width:380px;
+    background-color: aliceblue;
+    margin:auto;
+    margin-bottom:10px;
+    border-radius:10px;
+    border:1px solid black;
+    display:none;
+}
+.progress-fluid{
+    height: 100%;
+    width:0%;
+    background-color: antiquewhite;
+    border-radius: 10.5%;
+    transition:width 0.5s linear ;
+}
+.inner-container{
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top:5px;
+    left:15px;
+}
+.upload-percent{
+    font-size: 14px;
+}
+.progress-bar{
+    margin-top:5px;
+    height:2px;
+    width:90%;
+    background-color: aquamarine;
+    transform-origin: left;
+    transform: scale(0);
+    transition: transform 0.5s linear
+}
+.show-share{
+    width:100%;
+    height:auto;
+    text-align: center;
+    display: none;
+}
+.show-time{
+    width:100%;
+    height:20px;
+    margin-top:25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.show-link{
+    position: relative;
+}
+.show-link input{
+    width:90%;
+    margin-top:20px;
+    border:2px dashed rgb(203, 224, 242);
+    height:35px;
+    font-size: 17px;
+}
+.show-link i{
+    font-size: 25px;
+    position:absolute;
+    top:26px;
+    right:20px;
+    background-color:rgb(250, 253, 255);
+    cursor: pointer;
+}
+.send-email{
+    height:20px;
+    margin-top:20px;
+}
+#email-form{
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom:20px;
+    width:90%;
+    height:110px;
+    border:2px solid rgb(203, 224, 242);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#email-form input{
+    margin-left:50px;
+    border:0px;
+    border-bottom: solid 1px black;
+}
+#email-form input:focus{
+    outline: 0;
+}
+#email-form #sender-input{
+    margin-left:62.4px;
+}
+#send-btn{
+    color:rgb(59, 159, 247);
+    background-color:rgb(193, 221, 246);
+    height:30px;
+    font-size: 15px;
+}
+#footer{
+    position: absolute;
+    bottom:-2px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+    color:rgb(244, 165, 165);
+}
+
+
+
 
