@@ -15,10 +15,10 @@ var senderinput=document.getElementById('sender-input');
 var recieverinput=document.getElementById('reciever-input');
 var emailform=document.getElementById('email-form');
 var sendbtn=document.getElementById('send-btn')
-// const uploadlink="http://localhost:3000/api/files";
-// const sendlink="http://localhost:3000/api/files/send";
-const uploadlink="https://file-sharing-backend-9o0l.onrender.com/api/files";
-const sendlink="https://file-sharing-backend-9o0l.onrender.com/api/files/send";
+const uploadlink="http://localhost:3000/api/files";
+const sendlink="http://localhost:3000/api/files/send";
+// const uploadlink="https://file-sharing-backend-9o0l.onrender.com/api/files";
+// const sendlink="https://file-sharing-backend-9o0l.onrender.com/api/files/send";
 dropper.addEventListener('dragover',(e)=>{
     e.preventDefault();
     console.log('aaa');
@@ -107,9 +107,11 @@ const updateprogress=(e)=>{
 
 var a=0;
 const showlink=({file})=>{
-  
    progresscontainer.style.display='none'; 
    showshare.style.display='block';
+   const percentloaded=0;
+   progressfluid.style.width=`${percentloaded}%`;
+   uploadpercent.innerHTML=`${percentloaded}%`;
    input.value=file;
    console.log('file',file);
    const sendfunc=()=>{
