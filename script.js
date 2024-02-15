@@ -112,6 +112,7 @@ const showlink=({file})=>{
    const percentloaded=0;
    progressfluid.style.width=`${percentloaded}%`;
    uploadpercent.innerHTML=`${percentloaded}%`;
+   progressbar.style.width=0;
    input.value=file;
    console.log('file',file);
    const sendfunc=()=>{
