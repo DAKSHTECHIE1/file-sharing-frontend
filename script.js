@@ -138,6 +138,7 @@ const showlink=({file})=>{
             console.log(info)//{success: true}
             if(info.success){
                 showshare.style.display='none';
+                alert("File sent successfully");
             }
             sendbtn.removeEventListener('click',sendfunc);
             a--;
@@ -154,5 +155,6 @@ const showlink=({file})=>{
    console.log('a',a)
    sendbtn.addEventListener('click',sendfunc);
    a++;
+   
    console.log('a',a);
 }

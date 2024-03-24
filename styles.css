@@ -1,5 +1,15 @@
-body,.dropzone,#imgs{
-    background-color:rgba(204, 204, 243, 0.579);
+body,#imgs{
+    background-image:url('./Light\ Blue\ Website\ Background\ Image.jpeg');
+    margin:0px;
+    padding:0px;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+.dropzone{
+    /* background-image:url('./Light\ Blue\ Website\ Background\ Image.jpeg'); */
     margin:0px;
     padding:0px;
     height:100vh;
@@ -12,7 +22,7 @@ body,.dropzone,#imgs{
     top:0px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:30px;
-    color:rgb(244, 165, 165);
+    color:rgb(187, 220, 249);
 }
 .outer-container{
     width:400px;
@@ -97,6 +107,7 @@ body,.dropzone,#imgs{
     position: absolute;
     top:5px;
     left:15px;
+    /* background-color: antiquewhite; */
 }
 .upload-percent{
     font-size: 14px;
