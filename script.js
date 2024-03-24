@@ -17,8 +17,8 @@ var emailform=document.getElementById('email-form');
 var sendbtn=document.getElementById('send-btn')
 // const uploadlink="http://localhost:3000/api/files";
 // const sendlink="http://localhost:3000/api/files/send";
-const uploadlink="https://file-sharing-backend-9o0l.onrender.com/api/files";
-const sendlink="https://file-sharing-backend-9o0l.onrender.com/api/files/send";
+const uploadlink="https://file-sharing-backend-1.onrender.com/api/files";
+const sendlink="https://file-sharing-backend-1.onrender.com/api/files/send";
 dropper.addEventListener('dragover',(e)=>{
     e.preventDefault();
     console.log('aaa');
